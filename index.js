@@ -40,28 +40,15 @@ let throwFunction = (e) =>{
         countOne++
         numOne = Math.floor(Math.random()*6)+1;
         img1.src = `/images/dice${numOne}.png`;
-        
-        console.log(numOne);
         result[0] = numOne;
     }
     if(e.target.id == 'playerPlayButtonTwo'){
         countTwo++
         numTwo = Math.floor(Math.random()*6)+1;
         img2.src = `/images/dice${numTwo}.png`
-       
-        console.log(numTwo);
         result[1] = numTwo;
-
-
     }
     if(countOne === countTwo || countTwo === countOne){
-        // const valueToCheckOne = numOne;
-        // const valueToCheckTwo = numTwo;
-
-        // console.log(valueToCheckOne);
-        // console.log(valueToCheckTwo);
-
-            console.log(result);
                if(result[0] > result[1]){message.innerHTML= `Winner: ${playerOne.value}🎉️😊️`}
                if(result[1] > result[0]){message.innerHTML= `Winner: ${playerTwo.value}🎉️😊️`}
 
