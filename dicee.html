@@ -13,19 +13,33 @@
 
   <div class="container">
     <h1>Refresh Me</h1>
-
+   <div class="playerDiv">
+    <p class="message">Enter yours names</p>
+    <div class="nameField">
+    <input type="text" class="player" id="playerOne" value="Player 1">
+    <input type="text" class="player" id="playerTwo" value="Player 2">
+    </div>
+   </div>
+   <div class="startDiv">
+    <button class="startButton">PLAY</button>
+   </div>
+   <section class="spielFeld" >
     <div class="dice">
-      <p>Player 1</p>
-      <img class="img1" src="">
+      <p class="playerOneOnDice">Player 1</p>
+      <img id="img1" src="/images/dice1.png">
+      <button class="playerPlayButton" id="playerPlayButtonOne">Throw </button>
+
     </div>
 
     <div class="dice">
-      <p>Player 2</p>
-      <img class="img2" src="">
+      <p class="playerTwoOnDice">Player 2</p>
+      <img id="img2" src="/images/dice1.png">
+      <button class="playerPlayButton" id="playerPlayButtonTwo">Throw </button>
     </div>
+   </section>
 
   </div>
-
+<script src="/index.js"></script>
 
 </body>
 

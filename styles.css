@@ -1,17 +1,14 @@
+body {
+  background-color: #393E46;
+}
+
 .container {
   width: 70%;
   margin: auto;
-  text-align: center;
-}
-
-.dice {
-  text-align: center;
-  display: inline-block;
-
-}
-
-body {
-  background-color: #393E46;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
 }
 
 h1 {
@@ -22,6 +19,50 @@ h1 {
   color: #4ECCA3;
 }
 
+.startButton{
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #4ECCA3;
+  transition: 0.4s;
+}
+
+ .startButton:hover{
+  background-color: darkgreen;
+  color: white;
+  
+} 
+
+.spielFeld{
+  width: 40rem;
+  display: none;
+  justify-content: space-between;
+}
+.dice {
+/* background-color: white; */
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 0;
+ margin: 0;
+}
+
+
+.playerPlayButton{
+  width: 65px;
+  height: 30px;
+ border: none;
+ border-radius: 10px;
+ background-color: orange;
+}
+
+.playerPlayButton:hover{
+  width: 70px;
+  height: 35px;
+}
+
 p {
   font-size: 2rem;
   color: #4ECCA3;
@@ -29,7 +70,7 @@ p {
 }
 
 img {
-  width: 80%;
+  width: 60%;
 }
 
 footer {
@@ -37,5 +78,20 @@ footer {
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
+
+}
+/* PLAYER SECTION */
+.player{
+  height: 35px;
+}
+
+.playerDiv{
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nameField {
 
 }
